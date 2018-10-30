@@ -8,6 +8,26 @@
   <body>
     <p class="test">Hello world!</p>
     <p>Something new here.</p>
+    <canvas id="myCanvas" width="600" height="600"></canvas>
 
+    <script type="text/javascript">
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d")
+
+      function draw(){
+        context.beginPath();
+        context.arc(95, 50, 40, 0, 2 * Math.PI);
+        context.stroke();
+      }
+
+      draw();
+    </script>
   </body>
 </html>
+
+
+<!--
+git add .
+git status
+git commit -m ""
+git push -->
